@@ -29,6 +29,16 @@
   --formInput:      var(--white);
 }
 
+.dark-theme {
+  --navBg:          var(--darkGreen);
+  --navLinkHoverBg: var(--black);
+  --mainBg:         var(--black);
+  --fontColor:      var(--white);
+  --navLinkColor:   var(--blueGray);
+  --formBG:         var(--blueGray);
+  --formInput:      var(--black);
+}
+
 /* toggle styles begin */
 .toggle {
   appearance: none;
@@ -186,4 +196,11 @@ input[type=text]:focus {
 .contact button {
  background: var(--darkGreen);
  color: var(--white);
+}
+
+
+@media screen and (max-width: 600px) {
+    .myForm {
+      flex-direction: column;
+    }
 }
