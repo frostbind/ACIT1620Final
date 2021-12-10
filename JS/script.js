@@ -1,14 +1,17 @@
-//variables
-const toggleButton = document.querySelector(".toggle");
-const body = document.querySelector(".light-theme");
+//  --variables--
 
-const submitButton = document.querySelector("#frm-btn");
-const email = document.querySelector("#email");
-const nameInput = document.querySelector("#name");
-const message = document.querySelector("#msg");
+const toggleButton = document.querySelector(".toggle"); //toggle button
+const body = document.querySelector(".light-theme"); //body function for changing from light to dark theme
 
-//event handlers
-toggleButton.addEventListener("click", function() {
+const submitButton = document.querySelector("#frm-btn"); //submit button
+const email = document.querySelector("#email"); //email input
+const nameInput = document.querySelector("#name"); //name input (generic variable name "name" was noted to be deprecated)
+const message = document.querySelector("#msg"); //message input
+
+
+//  --event handlers--
+
+toggleButton.addEventListener("click", function() { //event handler for when the toggle button is clicked
     if (body.classList == "light-theme") {
         body.removeAttribute("light-theme")
         body.setAttribute("class", "dark-theme");
@@ -18,7 +21,7 @@ toggleButton.addEventListener("click", function() {
     }
 })
 
-submitButton.addEventListener("click", function(event) {
+submitButton.addEventListener("click", function(event) { //event handler for when the submit button is clicked
     event.preventDefault();
 
     let submission = {
@@ -28,3 +31,5 @@ submitButton.addEventListener("click", function(event) {
     }
     console.log(submission)
 })
+
+//end of script

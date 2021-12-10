@@ -198,7 +198,7 @@ input[type=text]:focus {
  color: var(--white);
 }
 
-
+/*Media styles for when screen is 600px or less */
 @media screen and (max-width: 600px) {
     .myForm {
       flex-direction: column;
