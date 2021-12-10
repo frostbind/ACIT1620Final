@@ -203,4 +203,17 @@ input[type=text]:focus {
     .myForm {
       flex-direction: column;
     }
+
+    nav>ul {
+      flex-direction: column;
+      --navHeight: 200px;
+    }
+
+    * {
+      font-size: 5px;
+    }
+
+    section {
+      height: calc(50vh - var(--navHeight));
+    }
 }
