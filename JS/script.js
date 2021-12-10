@@ -29,7 +29,7 @@ submitButton.addEventListener("click", function(event) { //event handler for whe
         name: nameInput.value,
         message: message.value
     }
-    console.log(submission)
+    console.log(submission);
 })
 
 //end of script
